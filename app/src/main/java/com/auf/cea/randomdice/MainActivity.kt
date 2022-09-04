@@ -2,6 +2,7 @@ package com.auf.cea.randomdice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,12 @@ class MainActivity : AppCompatActivity() {
         textView1.text = rollonce.die1.toString()
         textView2.text = rollonce.die2.toString()
         textView3.text = rollonce.die3.toString()
+        var res1str:String = rollonce.die1res
+        var res2str:String = rollonce.die2res
+        var res3str:String = rollonce.die3res
+        Log.d("TAG",res1str)
+        Log.d("TAG",res2str)
+        Log.d("TAG",res3str)
         editText.setText(rollonce.FinalResult.toString())
 
         checkBox.setOnCheckedChangeListener {
@@ -50,6 +57,9 @@ class MainActivity : AppCompatActivity() {
             var res1str:String = roll.die1res
             var res2str:String = roll.die2res
             var res3str:String = roll.die3res
+            Log.d("TAG",res1str)
+            Log.d("TAG",res2str)
+            Log.d("TAG",res3str)
             val result:String = roll.FinalResult
 
             editText.setText(result)
