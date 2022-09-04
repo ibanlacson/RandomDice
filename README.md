@@ -1,5 +1,6 @@
 # RandomDice
 Submitted by: Ivan S. Lacson & Andrea Chrstine Paule | BSECE4
+Video Recording: https://drive.google.com/drive/folders/10xz5h3JJpAK3yAzRFETyPFzfrTcq5a4V?usp=sharing
 
 # Instructions
 Create a Dice class using the Random Function. The class should return the value to the onCreate() block and prints out the number of sides and the number rolled example “You have rolled 6 on your 6 sided dice”
