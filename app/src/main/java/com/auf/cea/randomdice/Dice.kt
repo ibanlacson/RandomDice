@@ -36,21 +36,21 @@ class Dice {
     }
     private fun WinChecker():String{
         return if (t1 && t2 && t3) {
-            "You won on Dice 1, 2, and 3!"
+            " won on Dice 1, 2, and 3!"
         } else if (t1 && t2){
-            "You won on Dice 1 and 2"
+            " won on Dice 1 and 2"
         } else if (t1 && t3){
-            "You won on Dice 1 and 3"
+            " won on Dice 1 and 3"
         } else if (t2 && t3){
-            "You won on Dice 2 and 3"
+            " won on Dice 2 and 3"
         } else if (t1){
-            "You won on Dice 1"
+            " won on Dice 1"
         } else if (t2){
-            "You won on Dice 2"
+            " won on Dice 2"
         } else if (t3){
-            "You won on Dice 3"
+            " won on Dice 3"
         } else {
-            "You lose"
+            " lose"
         }
     }
     // Results

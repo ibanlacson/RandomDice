@@ -14,23 +14,24 @@ class MainActivity : AppCompatActivity() {
         val textView1: TextView = findViewById<TextView>(R.id.txtViewDieRes1)
         val textView2: TextView = findViewById<TextView>(R.id.txtViewDieRes2)
         val textView3: TextView = findViewById<TextView>(R.id.txtViewDieRes3)
-        val editText: EditText = findViewById<EditText>(R.id.editText_id)
+        val editText: EditText = findViewById<EditText>(R.id.editText_ID)
         val checkBox: CheckBox = findViewById<CheckBox>(R.id.checkBox)
+
 
         textView1.text = rollonce.die1.toString()
         textView2.text = rollonce.die2.toString()
         textView3.text = rollonce.die3.toString()
-        var res1str:String = rollonce.die1res
-        var res2str:String = rollonce.die2res
-        var res3str:String = rollonce.die3res
+        val res1str:String = rollonce.die1res
+        val res2str:String = rollonce.die2res
+        val res3str:String = rollonce.die3res
         Log.d("TAG",res1str)
         Log.d("TAG",res2str)
         Log.d("TAG",res3str)
-        editText.setText(rollonce.FinalResult.toString())
+        //editText.setText(rollonce.FinalResult.toString())
 
         checkBox.setOnCheckedChangeListener {
                 buttonView,
-                isChecked -> Toast.makeText(this,editText.text.toString(),
+                isChecked -> Toast.makeText(this,editText.text.toString() + rollonce.FinalResult,
                 Toast.LENGTH_SHORT).show()
         }
 
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         val textView1: TextView = findViewById<TextView>(R.id.txtViewDieRes1)
         val textView2: TextView = findViewById<TextView>(R.id.txtViewDieRes2)
         val textView3: TextView = findViewById<TextView>(R.id.txtViewDieRes3)
-        val editText: EditText = findViewById<EditText>(R.id.editText_id)
+        val editText: EditText = findViewById<EditText>(R.id.editText_ID)
         val checkBox: CheckBox = findViewById<CheckBox>(R.id.checkBox)
 
         btnRoll.setOnClickListener {
@@ -54,17 +55,16 @@ class MainActivity : AppCompatActivity() {
             textView2.text = roll.die2.toString()
             textView3.text = roll.die3.toString()
 
-            var res1str:String = roll.die1res
-            var res2str:String = roll.die2res
-            var res3str:String = roll.die3res
+            val res1str:String = roll.die1res
+            val res2str:String = roll.die2res
+            val res3str:String = roll.die3res
             Log.d("TAG",res1str)
             Log.d("TAG",res2str)
             Log.d("TAG",res3str)
             val result:String = roll.FinalResult
 
-            editText.setText(result)
             if (checkBox.isChecked) {
-                val toast = Toast.makeText(applicationContext, editText.text.toString(), Toast.LENGTH_SHORT)
+                val toast = Toast.makeText(applicationContext, editText.text.toString() + result, Toast.LENGTH_SHORT)
                 toast.show()
             }
         }
