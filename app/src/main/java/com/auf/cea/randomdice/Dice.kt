@@ -8,6 +8,7 @@ class Dice {
     private val lucky2 = 2
     var die3 = (1..40).random()
     private val lucky3 = 25
+
     private var t1: Boolean = lucky1 == die1
     private var t2: Boolean = lucky2 == die2
     private var t3: Boolean = lucky3 == die3
