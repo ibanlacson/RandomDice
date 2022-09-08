@@ -1,5 +1,5 @@
 # RandomDice
-- Submitted by: Ivan S. Lacson & Andrea Chrstine Paule | BSECE4
+- Submitted by: Ivan S. Lacson & Andrea Christine Paule | BSECE4
 - Video Recording: https://drive.google.com/drive/folders/10xz5h3JJpAK3yAzRFETyPFzfrTcq5a4V?usp=sharing
 
 # Instructions
